@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+body
+{
+  color:white;
+  background-image:url("/home/pc/Desktop/Req/HTML/LamdaTic/my-app/public/bd2.gif");
+}
+.title
+{
+font-size:30px;
+}
