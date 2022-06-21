@@ -45,5 +45,17 @@ body
 .title
 {
 font-size:40px;
-transform: translate(330%, 0%);
+position:absolute;
+top:0;
+left:40%;
+/* transform: translate(330%, 0%); */
+}
+.slot {
+  font-size:40px;
+}
+.title2
+{
+position:absolute;
+top:20%;
+left:35%;
 }

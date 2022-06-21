@@ -1,13 +1,23 @@
 import './App.css';
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Home';
+import Pvp from './Pvp';
+import Pvc from './Pvc';
 function App() {
   return (
     <>
-    <nav className="navbar" style={{backgroundColor: 'rgb(125, 13, 211)'}}>
-<div className='title'>Tic Tac Toe</div>
-</nav>
-<button type="button" class="btn btn-outline-dark">Start 1P vs AI</button>
-<button type="button" class="btn btn-outline-dark">Start 2 PvP</button>
+    <Router>
+      <Routes>
+      <Route path="/pvp" element={<Pvp></Pvp>}></Route>
+      <Route path="/pvc" element={<Pvc></Pvc>}></Route>
+      <Route path="/" element={<Home/>}></Route>
+      </Routes>
+      </Router>
 </>
   );
 }
